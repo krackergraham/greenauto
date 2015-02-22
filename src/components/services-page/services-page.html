@@ -1,0 +1,22 @@
+<style>
+    .services {
+        text-align: center;
+    }
+
+    .service-text {
+        white-space: pre-wrap;
+    }
+
+</style>
+
+<div class="container services">
+    <div class="row" data-bind="foreach: services">
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <h3 data-bind="text: $data.header"></h3>
+
+            <p class="service-text" data-bind="text: $data.content"></p>
+        </div>
+
+    </div>
+</div>
