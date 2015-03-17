@@ -1,50 +1,57 @@
 <style>
     .footer {
-        position: fixed;
         bottom: 0;
         width: 100%;
         margin-top: 20px;
         margin-bottom: 0;
-        padding: 10px;
-        background-color: #f5f5f5;
+        background: #fafafa;
+        padding: 35px 20px;
+        text-align: center
     }
 
-    .contact-info {
-        text-align: right;
+    .footer > ul {
+        list-style: none;
+        margin: 25px auto 35px;
+        padding: 0;
     }
 
-    ul.links-list {
-        list-style-type: none;
-        margin: 0;
+    .footer > ul > li {
+        display: inline-block;
+        margin: 0 18px;
     }
 
+    .footer > ul > li > a {
+        font-size: 16px;
+        color: #525252;
+    }
+    .footer > ul > li > a:hover {
+        font-size: 16px;
+        color: #71ee6d;
+    }
+
+    .footer p {
+        color: #aeaeae;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
 </style>
 
 <footer class="footer">
-    <div class="container">
-        <div class="row">
 
-            <div class="col-xs-12 col-sm-6">
-                <div class="contact-info pull-right">
-                    <p>Mon-Fri 9:00am - 5:30pm<br/>
-                        Evenings and weekends by appointment<br/>
-                        425-503-7743</p>
-                </div>
-            </div>
+    <ul>
+        <li>
+            <a href="https://www.facebook.com/pages/Green-Auto-Detail/167304920000709" target="_blank">Facebook</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/user/scottriekstins" target="_blank">Youtube</a>
+        </li>
+        <li>
+            <a href="mailto:scott@greenautodetail.com">E-mail</a>
+        </li>
+    </ul>
 
-            <div class="col-xs-12 col-sm-6 pull-left">
-                <ul class="links-list pull-left">
-                    <li>
-                        <a href="https://www.facebook.com/pages/Green-Auto-Detail/167304920000709" target="_blank">Facebook</a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/user/scottriekstins" target="_blank">Youtube</a>
-                    </li>
-                    <li>
-                        <a href="mailto:scott@greenautodetail.com">E-mail</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <p>Mon-Fri 9:00am - 5:30pm<br/>
+        Evenings and weekends by appointment<br/>
+        425-503-7743</p>
+
 </footer>

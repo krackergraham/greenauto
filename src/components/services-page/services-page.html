@@ -3,20 +3,55 @@
         text-align: center;
     }
 
+    .service-wrapper {
+        margin: 10px 0;
+        padding: 25px 15px;
+        border: 1px solid #dee0df;
+        border-radius: 4px;
+        height: 350px;
+        box-shadow: lightgrey 1px 1px 3px;
+    }
+
+    .service-wrapper h2 {
+        color: #42ee4a;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .service-wrapper h3 {
+        margin-top: 0;
+        color: #a3a3a3;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .service-wrapper .glyphicon {
+        font-size: xx-large;
+    }
+
     .service-text {
         white-space: pre-wrap;
     }
 
 </style>
+<script type="text/html" id="tile-template">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="service-wrapper">
+            <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+
+            <h2 data-bind="text: $data.header"></h2>
+
+            <h3 data-bind="text: '$' + $data.price"></h3>
+
+            <p class="service-text" data-bind="text: $data.content"></p>
+        </div>
+    </div>
+</script>
 
 <div class="container services">
     <div class="row" data-bind="foreach: services">
 
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <h3 data-bind="text: $data.header"></h3>
-
-            <p class="service-text" data-bind="text: $data.content"></p>
-        </div>
+        <div data-bind="template: {name: 'tile-template', data: $data}"></div>
 
     </div>
 </div>
