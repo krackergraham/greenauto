@@ -166,8 +166,9 @@ p {
     font-weight: 200;
 }
 
-.service-wrapper .glyphicon {
-    font-size: xx-large;
+.service-wrapper .service-icon {
+    height: 40px;
+    opacity: .8;
 }
 
 .service-text {
