@@ -13,19 +13,29 @@
 
     .navbar-default .navbar-nav > .active > a,
     .navbar-default .navbar-nav > .active > a:focus {
-        color: #71ee6d;
+        color: #2cb34d;
         background-color: transparent;
     }
 
     .navbar-default .nav > li > a:hover,
     .navbar-default .nav > .active > a:hover,
     .navbar-default .nav > li > a:focus {
-        color: #71ee6d;
+        color: #2cb34d;
         background-color: transparent;
     }
 
     .navbar-default .navbar-collapse {
         padding: 20px 0;
+    }
+
+    .navbar-header .logo {
+        height: 90px;
+        margin: auto 0;
+        padding: 10px;
+    }
+
+    .navbar-header .logo img {
+        width: 100px;
     }
 
     @media (max-width: 767px) {
@@ -38,6 +48,18 @@
             background-color: #fff;
             box-shadow: #dee0df 0 1px 2px;
         }
+
+        .navbar-header .logo {
+            height: 50px;
+            padding: 4px;
+            margin-left: 10px;
+            overflow: hidden;
+        }
+
+        .navbar-header .logo img {
+            width: 60px;
+        }
+
     }
 
 
@@ -51,20 +73,24 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Green Auto Detail</a>
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png">
+                </a>
+            </div>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li data-bind="css: { active: route().page === 'home-page' }">
-                    <a href="#">Home</a>
+                    <a href="#" data-toggle="collapse" data-target=".navbar-collapse">Home</a>
                 </li>
 
                 <li data-bind="css: { active: route().page === 'services-page' }">
-                    <a href="#services">Services</a>
+                    <a href="#services" data-toggle="collapse" data-target=".navbar-collapse">Services</a>
                 </li>
 
                 <li data-bind="css: { active: route().page === 'gallery-page' }">
-                    <a href="#gallery">Gallery</a>
+                    <a href="#gallery" data-toggle="collapse" data-target=".navbar-collapse">Gallery</a>
                 </li>
                 <!--</ul>-->
 

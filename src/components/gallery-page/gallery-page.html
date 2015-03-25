@@ -8,20 +8,18 @@
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <!--<ol class="carousel-indicators" data-bind="foreach: images">-->
-        <!--<li data-target="#carousel-example-generic"-->
-            <!--data-bind="attr: {'data-slide-to': $data.index }, css: $data.index === 0 ? 'active' : '' ">-->
-        <!--</li>-->
+    <!--<li data-target="#carousel-example-generic"-->
+    <!--data-bind="attr: {'data-slide-to': $data.index }, css: $data.index === 0 ? 'active' : '' ">-->
+    <!--</li>-->
     <!--</ol>-->
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox" data-bind="foreach: images">
 
-        <div data-bind="css: $data.index == 0 ? 'active item': 'item' ">
+        <div data-bind="css: $parent.isActive($data.index)">
             <img data-bind="attr: {src: $data.src}" alt="">
 
-            <div class="carousel-caption">
-
-            </div>
+            <div class="carousel-caption"></div>
         </div>
     </div>
 

@@ -5,16 +5,17 @@
     min-height: 600px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
     #page {
         margin-top: 80px;
     }
 }
 
-a {
+a:hover {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: none;
+p {
+    font-size: 13px;
+    color: #80878c;
 }

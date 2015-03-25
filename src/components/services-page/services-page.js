@@ -3,16 +3,6 @@ define(['knockout', 'text!./services-page.html'], function (ko, templateMarkup) 
     function ServicesPage(params) {
         this.services = ko.observable([
             {
-                header: "Mildew & Odor Removal",
-                content: "Our steam cleaning and ozone treatment will remedy most cases of mildew and odors",
-                price: 200
-            },
-            {
-                header: "Decal Removal",
-                content: "If you need us to remove that old clear bra, unwrap the race car or remove old signs and logos off of company vehicles, we can do that.",
-                price: 200
-            },
-            {
                 header: "Exterior Detail",
                 content: 'Hand wash and dry vehicle \n' +
                 'Tires and wheels cleaned \n' +
@@ -22,7 +12,7 @@ define(['knockout', 'text!./services-page.html'], function (ko, templateMarkup) 
                 'Wiper blades cleaned \n' +
                 'Exterior hand polish and wax \n' +
                 '(additional charge for paint correction)',
-                price: 200
+                price: "$150"
             },
             {
                 header: "Interior Detail",
@@ -34,32 +24,42 @@ define(['knockout', 'text!./services-page.html'], function (ko, templateMarkup) 
                 "Clean and condition leather \n" +
                 "Clean interior and exterior glass \n" +
                 "Clean trunk and door jambs",
-                price: 200
-            },
-            {
-                header: "Overspray Removal",
-                content: "Several insurance companies and contractors hire us to remove overspray off of vehicles. This can be a very tedious and time consuming task. We have saved many autos from needing refinishing work.",
-                price: 200
-            },
-            {
-                header: "Paint Correction",
-                content: "Most vehicles require some form of paint correction. From single stage machine polishing and hand waxing, to our four stage polishing process. Multi-stage polishing with a variety of foam pads takes time. So stop by and we'll educate you on what service your vehicle requires to look its best.",
-                price: 200
-            },
-            {
-                header: "Metal Polishing",
-                content: "From acid burned aluminum wheels to nickel winged hood ornaments we polish and perfect all types of metal.",
-                price: 200
+                price: "$150"
             },
             {
                 header: "Pre-Sale Detailing",
                 content: "It is obvious that a clean vehicle sells faster and at a higher price. Stop by and together we can determine what package is best for you and your auto.",
-                price: 200
+                price: "$180"
+            },
+            {
+                header: "Overspray Removal",
+                content: "Several insurance companies and contractors hire us to remove overspray off of vehicles. This can be a very tedious and time consuming task. We have saved many autos from needing refinishing work.",
+                price: "Quote"
+            },
+            {
+                header: "Mildew & Odor Removal",
+                content: "Our steam cleaning and ozone treatment will remedy most cases of mildew and odors",
+                price: "$170"
+            },
+            {
+                header: "Decal Removal",
+                content: "If you need us to remove that old clear bra, unwrap the race car or remove old signs and logos off of company vehicles, we can do that.",
+                price: "Quote"
+            },
+            {
+                header: "Metal Polishing",
+                content: "From acid burned aluminum wheels to nickel winged hood ornaments we polish and perfect all types of metal.",
+                price: "Quote"
+            },
+            {
+                header: "Paint Correction",
+                content: "Most vehicles require some form of paint correction. From single stage machine polishing and hand waxing, to our four stage polishing process. Multi-stage polishing with a variety of foam pads takes time. So stop by and we'll educate you on what service your vehicle requires to look its best.",
+                price: "Quote"
             },
             {
                 header: "Cilajet Paint Sealant",
                 content: "",
-                price: 200
+                price: "$700"
             }
         ]);
     }
