@@ -4,7 +4,7 @@ define(['knockout', 'text!./gallery-page.html'], function (ko, templateMarkup) {
 
         this.images = ko.observableArray();
         for (var i = 0; i < 48; i++) {
-            this.images.push({index: i, src: 'images/' + (i + 1) + '.jpg'});
+            this.images.push({index: i, src: 'images/gallery/' + (i + 1) + '.jpg'});
         }
 
     }

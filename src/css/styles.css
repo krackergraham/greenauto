@@ -19,3 +19,164 @@ p {
     font-size: 13px;
     color: #80878c;
 }
+
+/* ========== Home Page ========== */
+
+@media (max-width: 580px) {
+    .panel .blocks .block {
+        height: 410px;
+    }
+
+    .panel .blocks .block .text {
+        width: 100%;
+        float: none !important;
+        display: block;
+        padding: 5%;
+    }
+
+    .panel .blocks .block .media {
+        float: none !important;
+        display: block;
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .panel .blocks .block .media img {
+        width: 90% !important;
+        float: none !important;
+        margin: 0 5% !important;
+    }
+}
+
+@media (max-width: 980px) {
+    .panel {
+        padding: 75px 0;
+    }
+}
+
+.panel {
+    border: none;
+    box-shadow: none;
+    padding: 125px 0;
+}
+
+.blocks {
+    max-width: 900px;
+    background: #fff;
+    margin: 50px auto;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.blocks .block {
+    border-bottom: 1px solid #dbdcdb;
+    height: 275px;
+    overflow: hidden;
+}
+
+.blocks .block .text {
+    padding: 50px;
+    width: 60%;
+    float: left;
+}
+
+.blocks .block.even .text {
+    float: right;
+}
+
+.blocks .block .text h2 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #2cb34d;
+}
+
+.blocks .block .text p {
+    font-size: 13px;
+    color: #80878c;
+}
+
+.blocks .block .media {
+    float: right;
+    padding-top: 20px;
+    width: 40%;
+    overflow: hidden;
+}
+
+.blocks .block.even .media {
+    float: left;
+}
+
+.title-wrapper {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.title-wrapper h1 {
+    color: #525252;
+    font-weight: 100;
+    font-size: 52px;
+    margin: 0.67em 0
+}
+
+.title-wrapper p {
+    color: #aeaeae;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+@media (max-width: 760px) {
+    .title-wrapper h1 {
+        font-size: 40px;
+    }
+
+    .title-wrapper p {
+        font-size: 18px;
+    }
+
+    .panel {
+        padding: 40px 0;
+    }
+}
+
+/* ========== Services ========== */
+
+.services {
+    text-align: center;
+}
+
+.service-wrapper {
+    margin: 10px 0;
+    padding: 25px 15px;
+    border: 1px solid #dee0df;
+    border-radius: 4px;
+    height: 375px;
+    box-shadow: lightgrey 1px 1px 3px;
+}
+
+.service-wrapper h2 {
+    color: #2cb34d;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.service-wrapper h3 {
+    margin-top: 0;
+    color: #a3a3a3;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.service-wrapper .glyphicon {
+    font-size: xx-large;
+}
+
+.service-text {
+    white-space: pre-wrap;
+}
+
+/* ========== Gallery ========== */
+
+.carousel {
+    max-width: 570px;
+    margin: 0 auto;
+}

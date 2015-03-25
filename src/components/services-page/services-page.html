@@ -1,44 +1,8 @@
-<style>
-    .services {
-        text-align: center;
-    }
-
-    .service-wrapper {
-        margin: 10px 0;
-        padding: 25px 15px;
-        border: 1px solid #dee0df;
-        border-radius: 4px;
-        height: 375px;
-        box-shadow: lightgrey 1px 1px 3px;
-    }
-
-    .service-wrapper h2 {
-        color: #2cb34d;
-        font-size: 24px;
-        font-weight: 200;
-    }
-
-    .service-wrapper h3 {
-        margin-top: 0;
-        color: #a3a3a3;
-        font-size: 18px;
-        font-weight: 200;
-    }
-
-    .service-wrapper .glyphicon {
-        font-size: xx-large;
-    }
-
-    .service-text {
-        white-space: pre-wrap;
-    }
-
-</style>
 <script type="text/html" id="tile-template">
     <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="service-wrapper">
             <!--<span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>-->
-            <img src="images/sprayIcon.png" />
+            <img src="images/sprayIcon.png"/>
 
             <h2 data-bind="text: $data.header"></h2>
 
@@ -51,8 +15,6 @@
 
 <div class="container services">
     <div class="row" data-bind="foreach: services">
-
         <div data-bind="template: {name: 'tile-template', data: $data}"></div>
-
     </div>
 </div>
